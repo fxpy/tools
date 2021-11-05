@@ -11,9 +11,9 @@ else
   sudo apt install growpart -y
 fi
 
-echo '-=-=-=-=-=-=-=-=-=-=-'
-echo "Auto expand disk size"
-echo '-=-=-=-=-=-=-=-=-=-=-'
+echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
+echo "Auto expand disk size by fxpy"
+echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
 
 df -h
 echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
@@ -24,8 +24,9 @@ echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
 growpart /dev/sda $PART_NUM
 resize2fs /dev/sda$PART_NUM
 
+df -h
+
+echo ''
 echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
 echo "Your partition /dev/sda"$PART_NUM "resized"
 echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
-
-df -h
