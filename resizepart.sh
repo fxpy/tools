@@ -27,6 +27,6 @@ resize2fs /dev/sda$PART_NUM
 df -h
 
 echo ''
-echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
-echo "Your partition /dev/sda"$PART_NUM "resized"
-echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
+echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
+echo "Your partition /dev/sda"$PART_NUM "resized successfully!"
+echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
