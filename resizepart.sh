@@ -8,7 +8,7 @@ exists()
 if exists growpart; then
         echo ''
 else
-  sudo apt install growpart -y
+  sudo apt install cloud-guest-utils -y
 fi
 
 echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
