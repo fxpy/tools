@@ -20,7 +20,7 @@ echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
 echo "/dev/sda2 will be resized to 100%"
 echo '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'
 
-growpart /dev/sda2
+growpart /dev/sda 2
 resize2fs /dev/sda2
 
 df -h
